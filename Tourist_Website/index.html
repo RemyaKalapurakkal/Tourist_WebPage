@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script> 
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2>Beach Vacations</h2>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Locations</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="">Bali<li></a>
+                    <li><a href="">Australia</li></a>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Book Now!</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Hero Image with text -->
+    <main>
+        <section class="hero">
+            <img src="images/large/pexels-julius-silver-753626.jpg" alt="Bali">
+            <div class="hero-container">
+                <div class="layer">
+                    <h3>
+                        Enjoy Your Vacations With Us!
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Checkout our locations</h2>
+        </section>
+
+        <!-- Images in grid -->
+        <section class="top_image">
+            <img src="images/gallery/pexels-pixabay-533851.jpg" alt="DestinationPhoto1">
+            <img src="images/gallery/pexels-pixabay-533881.jpg" alt="DestinationPhoto1">
+            <img src="images/gallery/pexels-pixabay-533953.jpg" alt="DestinationPhoto1">
+        </section>
+
+        <section class="bottom_image">
+            <img src="images/gallery/pexels-pixabay-533971.jpg" alt="DestinationPhoto1">
+            <img src="images/gallery/pexels-pixabay-533973.jpg" alt="DestinationPhoto1">
+            <img src="images/gallery/pexels-pixabay-534121.jpg" alt="DestinationPhoto1">
+        </section>
+
+        <!-- Para with the video -->
+        <section class="video_para">
+            <div class="para1">
+                <h2>Vacation in Bali</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur cum incidunt eveniet aut perspiciatis quidem exercitationem expedita dolorem quasi odit ratione repudiandae harum inventore autem id, maxime error nihil.</p>
+                <p>Quidem facilis expedita reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem facilis expedita reprehenderit cumque voluptates dolorem accusantium, error non hic ipsum eveniet corporis. Excepturi nihil nam amet dolores, cum obcaecati cupiditate.</p>
+            </div>
+            <div class="video_wrapper">
+                <video autoplay muted controls src="videos/video.mp4">
+                </video>
+            </div>        
+        </section>
+
+        <!-- Form -->
+        <section class="contact-form">
+            <form action="" method="POST">
+                <h2>Contact us for bookings!</h2>
+                    <div class="field_wrapper">
+                        <label for="uName">Name</label>
+                        <input type="text" tabindex="1" id="uName" name="uName">
+                    </div>
+                    <div class="field_wrapper">
+                        <label for="uEmail">Email</label>
+                        <input type="text" tabindex="1" id="uEmail" name="uEmail">
+                    </div><br>
+                    <div class="field_wrapper">
+                        <label for="uMessage">Message</label>
+                        <input type="text" id="uMessage" name="uMessag">
+                    </div>
+                    <!-- Tiny MCE for the discription part -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <script src="/js/tinymce/tinymce.min.js"></script>
+                    <script>
+                        tinymce.init({
+                            selector: '#uMessage'
+                    });
+                    </script>
+                    <div class="action_btn">
+                        <button name="submit" class="action_btn_submit" type="submit" value="Enquiry" onclick="">Enquiry</button>
+                        <p id="saved"></p>            
+                    </div>  
+            </form>
+        </section>        
+    </main>
+
+    <!-- Footer with the name -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Remya Kalapurakkal Suresh <br>remyakalapurakk7621@conestogac.on.ca<br> Conestoga College.
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
